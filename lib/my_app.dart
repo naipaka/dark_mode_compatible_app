@@ -5,12 +5,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      title: 'Dark Mode Compatible App',
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(), // Support for OS dark mode
+      home: MyHomePage(),
     );
   }
 }
